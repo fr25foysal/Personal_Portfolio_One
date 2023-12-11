@@ -1,31 +1,39 @@
-import Typewriter from 'typewriter-effect';
+import { FaDownload } from "react-icons/fa";
+import { PiPhoneDisconnectFill } from "react-icons/pi";
+import dp from "../../assets/dp.png"
+import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
     return (
-      <div className="min-h-screen bg-black">
-        <h2 className="text-white text-2xl text-center ">
-          _Hi, I'm _Foysal_Rahman.
-        </h2>
-        <h1 className='text-4xl text-white'>
-          <Typewriter
-           options={{
-            // strings: ['Hello', 'World'],
-            autoStart: true,
-            loop: true,
-          }}
-            onInit={(typewriter) => {
-              typewriter
-              .pauseFor(2500)
-              .typeString('A simple yet powerful native javascript')
-              .pauseFor(300)
-              .deleteChars(10)
-              .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
-              .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-              .pauseFor(1000)
-              .start();
-            }}
+      <div className="min-h-[calc(100vh-20vh)] flex flex-col md:flex-row pt-28">
+        <div className="w-1/2 flex flex-col justify-center">
+          <h2 className="text-4xl font-medium">
+            {"// Hi, I'm _Foysal_Rahman"}
+          </h2>
+          <h2 className="text-5xl pt-5 text-react">
+            {"{ "}
+            <span >
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+            words={["_frontend_developer", "_web_designer"]}
+            loop={false}
+            cursor
+            cursorStyle='/'
+            typeSpeed={150}
+            deleteSpeed={150}
+            delaySpeed={1000}
           />
-        </h1>
+            </span>
+            {" }"}
+          </h2>
+          <div className=" space-x-5 pt-8">
+            <button className="btn ">Download CV <FaDownload /></button>
+            <button className="btn btn-outline text-white">Contact Me <PiPhoneDisconnectFill /></button>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <img src={dp} alt="profile Image" />
+        </div>
       </div>
     );
 };
