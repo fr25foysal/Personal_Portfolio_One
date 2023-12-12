@@ -1,10 +1,11 @@
 import BoxContainer from "../../Components/BoxContainer/BoxContainer";
-import { FaBootstrap, FaCss3Alt, FaReact, FaWordpress } from "react-icons/fa";
+import { FaBootstrap, FaBug, FaCss3Alt, FaReact, FaWordpress } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { RiFileCodeFill, RiJavascriptFill } from "react-icons/ri";
 import Banner from "./Banner";
 import cover1 from '../../assets/cover1.jpg'
 import { SiExpress, SiMinds, SiTailwindcss } from "react-icons/si";
-import { BiLogoMongodb } from "react-icons/bi";
+import { BiLogoMongodb, BiSupport } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { BsCupHotFill } from "react-icons/bs";
 import { PiPhoneDisconnectFill } from "react-icons/pi";
@@ -12,7 +13,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandNodejs } from "react-icons/tb";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { MdCastForEducation } from "react-icons/md";
+import { MdCastForEducation, MdEmail } from "react-icons/md";
 
 const Home = () => {
     return (
@@ -217,13 +218,21 @@ const Home = () => {
                 <TabList className={"flex justify-center"}>
                   <Tab
                     defaultFocus:true
-                    className={"px-10 py-5 text-react flex gap-3 items-center text-xl"}
-                  ><RiFileCodeFill />
+                    className={
+                      "px-10 py-5 text-react flex gap-3 items-center text-xl"
+                    }
+                  >
+                    <RiFileCodeFill />
                     Qualifications
                   </Tab>
                   <Tab
-                  className={" px-10 py-5 flex gap-3 items-center text-react text-xl"}
-                  ><MdCastForEducation />Education</Tab>
+                    className={
+                      " px-10 py-5 flex gap-3 items-center text-react text-xl"
+                    }
+                  >
+                    <MdCastForEducation />
+                    Education
+                  </Tab>
                 </TabList>
 
                 <TabPanel>
@@ -245,11 +254,15 @@ const Home = () => {
                       </div>
                       <div className="timeline-start md:text-end mb-10">
                         <time className="font-mono italic">2021</time>
-                        <div className="text-lg font-black">
+                        <div className="text-lg font-semibold text-react">
                           Started my journey
                         </div>
-                        The Apple Macintosh—later rebranded as the Macintosh
-                        128K—is the
+                        Embarked on my coding journey in 2021, mastering
+                        HTML/CSS initially, then transitioning to WordPress
+                        design & development. Currently immersed in MERN stack,
+                        specializing in React for dynamic frontends. As a tech
+                        enthusiast, I'm dedicated to continuous learning and
+                        exploring new technologies to enhance web experiences.
                       </div>
                       <hr />
                     </li>
@@ -270,9 +283,15 @@ const Home = () => {
                         </svg>
                       </div>
                       <div className="timeline-end mb-10">
-                        <time className="font-mono italic">1998</time>
-                        <div className="text-lg font-black">iMac</div>
-                        iMgfgf
+                        <time className="font-mono italic">2022</time>
+                        <div className="text-lg font-semibold text-react">
+                          WordPress Customizer
+                        </div>
+                        I joined "It Vanilla" as a WordPress customizer,
+                        leveraging my skills to tailor and enhance WordPress
+                        websites. Excited to contribute my expertise in
+                        customizing and optimizing the platform for a seamless
+                        user experience.
                       </div>
                       <hr />
                     </li>
@@ -296,12 +315,15 @@ const Home = () => {
                         </svg>
                       </div>
                       <div className="timeline-start md:text-end mb-10">
-                        <time className="font-mono italic">1984</time>
-                        <div className="text-lg font-black">
-                          First Macintosh computer
+                        <time className="font-mono italic">2021</time>
+                        <div className="text-lg font-semibold text-react">
+                          Secondary School Certificate
                         </div>
-                        The Apple Macintosh—later rebranded as the Macintosh
-                        128K—is the
+                        I accomplished my Secondary School Certificate at
+                        Setabgonj Ideal Academy School, achieving a stellar GPA
+                        of 5.00. This academic success reflects my commitment to
+                        excellence and sets a strong foundation for my continued
+                        educational journey.
                       </div>
                       <hr />
                     </li>
@@ -322,9 +344,15 @@ const Home = () => {
                         </svg>
                       </div>
                       <div className="timeline-end mb-10">
-                        <time className="font-mono italic">1998</time>
-                        <div className="text-lg font-black">iMac</div>
-                        iMgfgf
+                        <time className="font-mono italic">2023</time>
+                        <div className="text-lg font-semibold text-react">
+                          Secondary School Certificate
+                        </div>
+                        I attained my Higher Secondary Certificate from Dinajpur
+                        Government City College with distinction, securing a
+                        commendable GPA of 4.75. This accomplishment underscores
+                        my dedication to academic excellence and further shapes
+                        my educational trajectory.
                       </div>
                       <hr />
                     </li>
@@ -362,12 +390,166 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-black pt-14 ">
+        <section className="bg-neutral-600 pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               Contact<span className="text-react"> Me</span>
             </h2>
             <div className="divider bg-react h-1 w-32 my-0"></div>
+            <div>
+              <div className="container my-24 mx-auto">
+                <div className="flex flex-wrap">
+                  <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
+                    <form className="mb-6">
+                      <div className="flex gap-4">
+                         <div className="mb-6 w-1/2">
+                        <label
+                          htmlFor="name"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >
+                          Your Name
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Jhon Doe"
+                          required
+                        />
+                      </div>
+                      <div className="mb-6 w-1/2">
+                        <label
+                          htmlFor="email"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >
+                          Your email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="name@company.com"
+                          required
+                        />
+                      </div>
+                      </div>
+                     
+                      <div className="mb-6">
+                        <label
+                          htmlFor="subject"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >
+                          Subject
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Let us know how we can help you"
+                          required
+                        />
+                      </div>
+                      <div className="mb-6">
+                        <label
+                          htmlFor="message"
+                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >
+                          Your message
+                        </label>
+                        <textarea
+                          id="message"
+                          rows="4"
+                          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Your message..."
+                        ></textarea>
+                      </div>
+                      <button
+                        type="submit"
+                        className="bg-react btn  w-full"
+                      >
+                        Send message
+                      </button>
+                    </form>
+                  </div>
+                  <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 ">
+                    <div className="flex flex-wrap">
+                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div className="flex items-start">
+                          <div className="shrink-0">
+                            <div className="inline-block rounded-md  p-4 text-react text-2xl">
+                            <BiSupport />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold dark:text-white">
+                              Phone
+                            </p>
+                           
+                            <p className="text-react dark:text-neutral-200">
+                              +1 234-567-89
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div className="flex items-start">
+                          <div className="shrink-0">
+                            <div className="inline-block rounded-md p-4 text-react text-2xl">
+                            <MdEmail />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold dark:text-white">
+                              Email questions
+                            </p>
+                            <a  href="mailto:fr25foysal@gmail.com" className=" text-react dark:text-neutral-200">
+                              fr25foysal@gmail.com
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div className="align-start flex">
+                          <div className="shrink-0">
+                            <div className="inline-block rounded-md bg-primary-100 p-4 text-react text-2xl">
+                            <FaSquareWhatsapp />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold dark:text-white">
+                             Whatsapp
+                            </p>
+                            <a href="https://wa.me/+8801750926652" target="blank" className="text-react underline dark:text-neutral-200">
+                              Foysal Rahman
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div className="align-start flex">
+                          <div className="shrink-0">
+                            <div className="inline-block rounded-md bg-primary-100 p-4 text-react text-2xl">
+                            <FaBug />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold dark:text-white">
+                              Bug report
+                            </p>
+                            <a href="mailto:fr25foysal@gmail.com" className="text-react dark:text-neutral-200">
+                              fr25foysal@gmail.com
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </BoxContainer>
         </section>
       </div>
