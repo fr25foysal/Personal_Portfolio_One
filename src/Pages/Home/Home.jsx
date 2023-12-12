@@ -13,9 +13,28 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandNodejs } from "react-icons/tb";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import emailjs from 'emailjs-com';
 import { MdCastForEducation, MdEmail } from "react-icons/md";
+import toast from "react-hot-toast";
 
 const Home = () => {
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    const form = e.target
+    const name = form.name.value
+    const email = form.email.value
+    const subject = form.subject.value
+    const message = form.message.value
+    const mail = {name,email,subject,message}
+
+    emailjs.sendForm('service_zodv5jn','template_ft51oos', form, '3dLidzNE0beIElpcY')
+    .then((result) => {
+      toast.success('Successfully Sent!')
+        // window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+    }, (error) => {
+        console.log(error.text);
+    });
+  }
     return (
       <div>
         <section className="bg-black ">
@@ -392,7 +411,7 @@ const Home = () => {
               <div className="container my-24 mx-auto">
                 <div className="flex flex-wrap">
                   <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
-                    <form className="mb-6">
+                    <form onSubmit={handleSubmit} className="mb-6 text-black">
                       <div className="flex gap-4">
                          <div className="mb-6 w-1/2">
                         <label
@@ -403,6 +422,7 @@ const Home = () => {
                         </label>
                         <input
                           type="text"
+                          name='name'
                           id="name"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Jhon Doe"
@@ -418,6 +438,7 @@ const Home = () => {
                         </label>
                         <input
                           type="email"
+                          name='email'
                           id="email"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="name@company.com"
@@ -435,6 +456,7 @@ const Home = () => {
                         </label>
                         <input
                           type="text"
+                          name='subject'
                           id="subject"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Let us know how we can help you"
@@ -450,8 +472,10 @@ const Home = () => {
                         </label>
                         <textarea
                           id="message"
+                          
+                          name='message'
                           rows="4"
-                          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 "
                           placeholder="Your message..."
                         ></textarea>
                       </div>
