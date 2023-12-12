@@ -28,7 +28,7 @@ const Banner = () => {
           </h2>
           <div className=" space-x-5 pt-8">
             <button className="btn ">Download CV <FaDownload /></button>
-            <button className="btn btn-outline text-white">Contact Me <PiPhoneDisconnectFill /></button>
+            <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">Contact Me <PiPhoneDisconnectFill /></button>
           </div>
         </div>
         <div className="w-1/2">
