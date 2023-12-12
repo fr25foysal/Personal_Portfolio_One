@@ -23,7 +23,7 @@ const Home = () => {
             <Banner></Banner>
           </BoxContainer>
         </section>
-        <section className="bg-neutral-600 pt-14 pb-8">
+        <section id="about" className="bg-neutral-600 pt-14 pb-8">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">About</span> Me
@@ -85,7 +85,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-black pt-14 pb-14">
+        <section id="skill" className="bg-black pt-14 pb-14">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Skills</span>
@@ -207,7 +207,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-neutral-600 pt-14 ">
+        <section id="experience" className="bg-neutral-600 pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Experience</span>
@@ -363,7 +363,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-black pt-14 ">
+        <section id="projects" className="bg-black pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">Recent</span> Projects
@@ -372,25 +372,17 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-neutral-600 pt-14 ">
-          <BoxContainer>
-            <h2 className="font-medium text-2xl">
-              My <span className="text-react">Qualifications</span>
-            </h2>
-            <div className="divider bg-react h-1 w-48 my-0"></div>
-          </BoxContainer>
-        </section>
 
-        <section className="bg-black pt-14 ">
+        {/* <section className="bg-black pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">Valuable</span> Recomendations
             </h2>
             <div className="divider bg-react h-1 w-56 my-0"></div>
           </BoxContainer>
-        </section>
+        </section> */}
 
-        <section className="bg-neutral-600 pt-14 ">
+        <section id="contact" className="bg-neutral-600 pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               Contact<span className="text-react"> Me</span>
