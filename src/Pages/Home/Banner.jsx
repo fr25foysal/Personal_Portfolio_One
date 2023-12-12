@@ -2,6 +2,7 @@ import { FaDownload } from "react-icons/fa";
 import { PiPhoneDisconnectFill } from "react-icons/pi";
 import dp from "../../assets/dp.png"
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
@@ -27,7 +28,9 @@ const Banner = () => {
             {" }"}
           </h2>
           <div className=" space-x-5 pt-8">
+            <Link to={'https://drive.google.com/uc?export=download&id=1-YwNrdlpeij7taGQaZ6hnSGeb7cnhjkB'}>
             <button className="btn ">Download CV <FaDownload /></button>
+            </Link>
             <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">Contact Me <PiPhoneDisconnectFill /></button>
           </div>
         </div>
