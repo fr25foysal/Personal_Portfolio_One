@@ -14,7 +14,7 @@ const Home = () => {
             <Banner></Banner>
           </BoxContainer>
         </section>
-        <section className="bg-neutral-600 py-10">
+        <section className="bg-neutral-600 pt-14">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">About</span> Me
@@ -37,37 +37,99 @@ const Home = () => {
                 <div className="stats shadow mt-5">
                   <div className="stat">
                     <div className="stat-figure text-react text-4xl">
-                    <SiMinds />
+                      <SiMinds />
                     </div>
-                    <div className="stat-title font-medium text-black">Experience</div>
+                    <div className="stat-title font-medium text-black">
+                      Experience
+                    </div>
                     <div className="stat-value text-react">...</div>
                     <div className="stat-desc">Nov 2023 - ...</div>
                   </div>
 
                   <div className="stat">
                     <div className="stat-figure text-react text-4xl">
-                    <GrProjects />
+                      <GrProjects />
                     </div>
-                    <div className="stat-title font-medium text-black">Projects</div>
+                    <div className="stat-title font-medium text-black">
+                      Projects
+                    </div>
                     <div className="stat-value text-react">4+</div>
                     <div className="stat-desc">Ongoing</div>
                   </div>
 
                   <div className="stat">
                     <div className="stat-figure   text-react text-4xl">
-                    <BsCupHotFill />
+                      <BsCupHotFill />
                     </div>
-                    <div className="stat-title font-medium text-black">Finished Coffee</div>
+                    <div className="stat-title font-medium text-black">
+                      Finished Coffee
+                    </div>
                     <div className="stat-value text-react">200+</div>
                     <div className="stat-desc">Delicious</div>
                   </div>
                 </div>
-                <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">Contact Me <PiPhoneDisconnectFill /></button>
+                <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">
+                  Contact Me <PiPhoneDisconnectFill />
+                </button>
               </div>
             </div>
           </BoxContainer>
         </section>
-        
+
+        <section className="bg-black pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+              My <span className="text-react">Skills</span>
+            </h2>
+            <div className="divider bg-react h-1 w-24 my-0"></div>
+          </BoxContainer>
+        </section>
+
+        <section className="bg-neutral-600 pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+              My <span className="text-react">Experience</span>
+            </h2>
+            <div className="divider bg-react h-1 w-44 my-0"></div>
+          </BoxContainer>
+        </section>
+
+        <section className="bg-black pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+            <span className="text-react">Recent</span> Projects
+            </h2>
+            <div className="divider bg-react h-1 w-44 my-0"></div>
+          </BoxContainer>
+        </section>
+
+        <section className="bg-neutral-600 pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+            My <span className="text-react">Qualifications</span>
+            </h2>
+            <div className="divider bg-react h-1 w-48 my-0"></div>
+          </BoxContainer>
+        </section>
+
+        <section className="bg-black pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+            <span className="text-react">Valuable</span> Recomendations
+            </h2>
+            <div className="divider bg-react h-1 w-56 my-0"></div>
+          </BoxContainer>
+        </section>
+
+        <section className="bg-black pt-14 ">
+          <BoxContainer>
+            <h2 className="font-medium text-2xl">
+            Contact<span className="text-react"> Me</span> 
+            </h2>
+            <div className="divider bg-react h-1 w-32 my-0"></div>
+          </BoxContainer>
+        </section>
+
       </div>
     );
 };
