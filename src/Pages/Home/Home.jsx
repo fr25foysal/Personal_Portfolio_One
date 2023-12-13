@@ -4,7 +4,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { RiFileCodeFill, RiJavascriptFill } from "react-icons/ri";
 import Banner from "./Banner";
 import cover1 from '../../assets/cover1.jpg'
-import { SiExpress, SiMinds, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiJsonwebtokens, SiMinds, SiTailwindcss } from "react-icons/si";
 import { BiLogoMongodb, BiSupport } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { BsCupHotFill } from "react-icons/bs";
@@ -13,9 +13,33 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandNodejs } from "react-icons/tb";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import emailjs from 'emailjs-com';
 import { MdCastForEducation, MdEmail } from "react-icons/md";
+import toast from "react-hot-toast";
+import lifeflow1 from "../../assets/lifeflow1.png"
+import lifeflow2 from "../../assets/lifeflow2.png"
+import lifeflow3 from "../../assets/lifeflow3.png"
+import lifeflow4 from "../../assets/lifeflow4.png"
+import lifeflow5 from "../../assets/lifeflow5.png"
 
 const Home = () => {
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    const form = e.target
+    const name = form.name.value
+    const email = form.email.value
+    const subject = form.subject.value
+    const message = form.message.value
+    const mail = {name,email,subject,message}
+
+    emailjs.sendForm('service_zodv5jn','template_ft51oos', form, '3dLidzNE0beIElpcY')
+    .then((result) => {
+      toast.success('Successfully Sent!')
+        // window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+    }, (error) => {
+        console.log(error.text);
+    });
+  }
     return (
       <div>
         <section className="bg-black ">
@@ -23,7 +47,7 @@ const Home = () => {
             <Banner></Banner>
           </BoxContainer>
         </section>
-        <section className="bg-neutral-600 pt-14 pb-8">
+        <section id="about" className="bg-neutral-600 pt-14 pb-8">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">About</span> Me
@@ -85,7 +109,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-black pt-14 pb-14">
+        <section id="skill" className="bg-black pt-14 pb-14">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Skills</span>
@@ -207,7 +231,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-neutral-600 pt-14 ">
+        <section id="experience" className="bg-neutral-600 pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Experience</span>
@@ -363,34 +387,121 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section className="bg-black pt-14 ">
+        <section id="projects" className="bg-black py-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">Recent</span> Projects
             </h2>
             <div className="divider bg-react h-1 w-44 my-0"></div>
+            <div className="pt-10">
+            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
+            </div>
+              <div className="grid grid-cols-3 gap-8 py-5">
+                <img src={lifeflow2} alt="lifeflow" />
+                <img src={lifeflow3} alt="lifeflow" />
+                <img src={lifeflow1} alt="lifeflow" />
+                <img src={lifeflow4} alt="lifeflow" />
+                <div className="bg-neutral-600 text-center p-2">
+                  <h2 className="text-3xl font-medium text-react">Lifeflow</h2> 
+                  <p>A Blood Donation Cummunity Website</p>   
+                  <div className="flex gap-5 justify-between px-2 py-3 text-left">
+                    <ul className="list-disc list-inside">
+                      <li>Request Donation</li>
+                      <li>Content Manage</li>
+                      <li>Request Donation</li>
+                    </ul>
+                    <ul className="list-disc">
+                      <li>User Authentication</li>
+                      <li>Search/Sort</li>
+                      <li>Role Dashboards</li>
+                    </ul>
+                  </div>
+                  <div className="space-x-6">
+                    <a href="https://lifeflow-25.web.app" target="blank" className="btn bg-react border-none">Live Link</a>
+                    <a href="https://github.com/fr25foysal/LifeFlow-Blood-Donation-Community" target="blank" className="btn btn-outline border-white text-white">Github Link</a>
+                    </div>                
+                </div>
+                
+                <img src={lifeflow5} alt="lifeflow" />
+
+              </div>
+            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
+            </div>
+              <div className="grid grid-cols-3 gap-8 py-5">
+                <img src={lifeflow2} alt="lifeflow" />
+                <img src={lifeflow3} alt="lifeflow" />
+                <img src={lifeflow1} alt="lifeflow" />
+                <img src={lifeflow4} alt="lifeflow" />
+                <div className="bg-neutral-600 text-center p-2">
+                  <h2 className="text-3xl font-medium text-react">Lifeflow</h2> 
+                  <p>A Blood Donation Cummunity Website</p>   
+                  <div className="flex gap-5 justify-between px-2 py-3 text-left">
+                    <ul className="list-disc list-inside">
+                      <li>Request Donation</li>
+                      <li>Content Manage</li>
+                      <li>Request Donation</li>
+                    </ul>
+                    <ul className="list-disc">
+                      <li>User Authentication</li>
+                      <li>Search/Sort</li>
+                      <li>Role Dashboards</li>
+                    </ul>
+                  </div>
+                  <div className="space-x-6">
+                    <a href="https://lifeflow-25.web.app" target="blank" className="btn bg-react border-none">Live Link</a>
+                    <a href="https://github.com/fr25foysal/LifeFlow-Blood-Donation-Community" target="blank" className="btn btn-outline border-white text-white">Github Link</a>
+                    </div>                
+                </div>
+                
+                <img src={lifeflow5} alt="lifeflow" />
+
+              </div>
+            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
+            </div>
+              <div className="grid grid-cols-3 gap-8 py-5">
+                <img src={lifeflow2} alt="lifeflow" />
+                <img src={lifeflow3} alt="lifeflow" />
+                <img src={lifeflow1} alt="lifeflow" />
+                <img src={lifeflow4} alt="lifeflow" />
+                <div className="bg-neutral-600 text-center p-2">
+                  <h2 className="text-3xl font-medium text-react">Lifeflow</h2> 
+                  <p>A Blood Donation Cummunity Website</p>   
+                  <div className="flex gap-5 justify-between px-2 py-3 text-left">
+                    <ul className="list-disc list-inside">
+                      <li>Request Donation</li>
+                      <li>Content Manage</li>
+                      <li>Request Donation</li>
+                    </ul>
+                    <ul className="list-disc">
+                      <li>User Authentication</li>
+                      <li>Search/Sort</li>
+                      <li>Role Dashboards</li>
+                    </ul>
+                  </div>
+                  <div className="space-x-6">
+                    <a href="https://lifeflow-25.web.app" target="blank" className="btn bg-react border-none">Live Link</a>
+                    <a href="https://github.com/fr25foysal/LifeFlow-Blood-Donation-Community" target="blank" className="btn btn-outline border-white text-white">Github Link</a>
+                    </div>                
+                </div>
+                
+                <img src={lifeflow5} alt="lifeflow" />
+
+              </div>
+            </div>
           </BoxContainer>
         </section>
 
-        <section className="bg-neutral-600 pt-14 ">
-          <BoxContainer>
-            <h2 className="font-medium text-2xl">
-              My <span className="text-react">Qualifications</span>
-            </h2>
-            <div className="divider bg-react h-1 w-48 my-0"></div>
-          </BoxContainer>
-        </section>
 
-        <section className="bg-black pt-14 ">
+        {/* <section className="bg-black pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">Valuable</span> Recomendations
             </h2>
             <div className="divider bg-react h-1 w-56 my-0"></div>
           </BoxContainer>
-        </section>
+        </section> */}
 
-        <section className="bg-neutral-600 pt-14 ">
+        <section id="contact" className="bg-neutral-600 pt-14 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               Contact<span className="text-react"> Me</span>
@@ -400,7 +511,7 @@ const Home = () => {
               <div className="container my-24 mx-auto">
                 <div className="flex flex-wrap">
                   <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
-                    <form className="mb-6">
+                    <form onSubmit={handleSubmit} className="mb-6 text-black">
                       <div className="flex gap-4">
                          <div className="mb-6 w-1/2">
                         <label
@@ -411,6 +522,7 @@ const Home = () => {
                         </label>
                         <input
                           type="text"
+                          name='name'
                           id="name"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Jhon Doe"
@@ -426,6 +538,7 @@ const Home = () => {
                         </label>
                         <input
                           type="email"
+                          name='email'
                           id="email"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="name@company.com"
@@ -443,6 +556,7 @@ const Home = () => {
                         </label>
                         <input
                           type="text"
+                          name='subject'
                           id="subject"
                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Let us know how we can help you"
@@ -458,8 +572,10 @@ const Home = () => {
                         </label>
                         <textarea
                           id="message"
+                          
+                          name='message'
                           rows="4"
-                          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 "
                           placeholder="Your message..."
                         ></textarea>
                       </div>
