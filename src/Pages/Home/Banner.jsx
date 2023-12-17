@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     return (
       <div className="min-h-[calc(100vh-20vh)] p-5 pb-0 flex flex-col md:flex-row pt-28">
-        <div className="md:w-1/2 flexflex-col justify-center">
+        <div className="md:w-1/2 flex flex-col justify-center">
           <h2 className="md:text-4xl text-3xl font-medium">
             {"// Hi, I'm _Foysal_Rahman"}
           </h2>
-          <h2 className="md:text-5xl text-xl pt-5 text-react">
+          <h2 className="md:text-3xl text-xl pt-5 text-react">
             {"{ "}
             <span>
               {/* Style will be inherited from the parent element */}

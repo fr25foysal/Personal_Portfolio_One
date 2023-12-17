@@ -231,19 +231,19 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section id="experience" className="bg-neutral-600 pt-14 ">
+        <section id="experience" className="bg-neutral-600 py-10 p-5 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Experience</span>
             </h2>
             <div className="divider bg-react h-1 w-44 my-0"></div>
-            <div>
+            <div className="py-5 mx-5">
               <Tabs>
                 <TabList className={"flex justify-center"}>
                   <Tab
                     defaultFocus:true
                     className={
-                      "px-10 py-5 text-react flex gap-3 items-center text-xl"
+                      "md:px-10 px-5 py-5 text-react flex gap-3 items-center text-lg md:text-xl"
                     }
                   >
                     <RiFileCodeFill />
@@ -251,7 +251,7 @@ const Home = () => {
                   </Tab>
                   <Tab
                     className={
-                      " px-10 py-5 flex gap-3 items-center text-react text-xl"
+                      "md:px-10 px-5 py-5 flex gap-3 items-center text-react text-lg md:text-xl"
                     }
                   >
                     <MdCastForEducation />
@@ -260,7 +260,10 @@ const Home = () => {
                 </TabList>
 
                 <TabPanel>
-                  <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+
+                    
+
+                  <ul className="timeline text-justify timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                       <div className="timeline-middle">
                         <svg
@@ -387,7 +390,7 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section id="projects" className="bg-black py-14 ">
+        <section id="projects" className="bg-black py-10 p-5 ">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">Recent</span> Projects
@@ -396,7 +399,7 @@ const Home = () => {
             <div className="pt-10">
             <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
             </div>
-              <div className="grid grid-cols-3 gap-8 py-5">
+              <div className="grid lg:grid-cols-3 gap-8 py-5">
                 <img src={lifeflow2} alt="lifeflow" />
                 <img src={lifeflow3} alt="lifeflow" />
                 <img src={lifeflow1} alt="lifeflow" />
@@ -427,7 +430,7 @@ const Home = () => {
               </div>
             <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
             </div>
-              <div className="grid grid-cols-3 gap-8 py-5">
+              <div className="grid lg:grid-cols-3 gap-8 py-5">
                 <img src={lifeflow2} alt="lifeflow" />
                 <img src={lifeflow3} alt="lifeflow" />
                 <img src={lifeflow1} alt="lifeflow" />
@@ -458,7 +461,7 @@ const Home = () => {
               </div>
             <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
             </div>
-              <div className="grid grid-cols-3 gap-8 py-5">
+              <div className="grid lg:grid-cols-3 gap-8 py-5">
                 <img src={lifeflow2} alt="lifeflow" />
                 <img src={lifeflow3} alt="lifeflow" />
                 <img src={lifeflow1} alt="lifeflow" />
@@ -501,17 +504,17 @@ const Home = () => {
           </BoxContainer>
         </section> */}
 
-        <section id="contact" className="bg-neutral-600 pt-14 ">
+        <section id="contact" className="bg-neutral-600 py-10 p-5">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               Contact<span className="text-react"> Me</span>
             </h2>
             <div className="divider bg-react h-1 w-32 my-0"></div>
             <div>
-              <div className="container my-24 mx-auto">
+              <div className="container md:my-24 mt-8  mx-auto">
                 <div className="flex flex-wrap">
-                  <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
-                    <form onSubmit={handleSubmit} className="mb-6 text-black">
+                  <div className=" w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
+                    <form onSubmit={handleSubmit} className="mb-6 text-white">
                       <div className="flex gap-4">
                          <div className="mb-6 w-1/2">
                         <label
@@ -524,7 +527,7 @@ const Home = () => {
                           type="text"
                           name='name'
                           id="name"
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Jhon Doe"
                           required
                         />
@@ -540,7 +543,7 @@ const Home = () => {
                           type="email"
                           name='email'
                           id="email"
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="name@company.com"
                           required
                         />
@@ -550,7 +553,7 @@ const Home = () => {
                       <div className="mb-6">
                         <label
                           htmlFor="subject"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          className="block mb-2 text-sm font-medium dark:text-white"
                         >
                           Subject
                         </label>
@@ -558,7 +561,7 @@ const Home = () => {
                           type="text"
                           name='subject'
                           id="subject"
-                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Let us know how we can help you"
                           required
                         />
@@ -587,9 +590,9 @@ const Home = () => {
                       </button>
                     </form>
                   </div>
-                  <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 ">
+                  <div className="w-full pt-5 shrink-0 grow-0 basis-auto lg:w-7/12 ">
                     <div className="flex flex-wrap">
-                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                      <div className=" mb-5 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
                             <div className="inline-block rounded-md  p-4 text-react text-2xl">
@@ -607,7 +610,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                      <div className=" mb-5 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
                             <div className="inline-block rounded-md p-4 text-react text-2xl">
@@ -625,7 +628,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                      <div className="mb-5 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                         <div className="align-start flex">
                           <div className="shrink-0">
                             <div className="inline-block rounded-md bg-primary-100 p-4 text-react text-2xl">
@@ -643,7 +646,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                      <div className="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                         <div className="align-start flex">
                           <div className="shrink-0">
                             <div className="inline-block rounded-md bg-primary-100 p-4 text-react text-2xl">
