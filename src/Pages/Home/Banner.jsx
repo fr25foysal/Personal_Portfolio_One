@@ -6,35 +6,47 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-      <div className="min-h-[calc(100vh-20vh)] flex flex-col md:flex-row pt-28">
-        <div className="w-1/2 flex flex-col justify-center">
-          <h2 className="text-4xl font-medium">
+      <div className="min-h-[calc(100vh-20vh)] p-5 pb-0 flex flex-col md:flex-row pt-28">
+        <div className="md:w-1/2 flexflex-col justify-center">
+          <h2 className="md:text-4xl text-3xl font-medium">
             {"// Hi, I'm _Foysal_Rahman"}
           </h2>
-          <h2 className="text-5xl pt-5 text-react">
+          <h2 className="md:text-5xl text-xl pt-5 text-react">
             {"{ "}
-            <span >
+            <span>
               {/* Style will be inherited from the parent element */}
               <Typewriter
-            words={["_frontend_developer", "_web_designer"]}
-            loop={false}
-            cursor
-            cursorStyle='/'
-            typeSpeed={150}
-            deleteSpeed={150}
-            delaySpeed={1000}
-          />
+                words={[
+                  "_frontend_developer",
+                  "_web_designer",
+                  "_mern_stack_developer",
+                ]}
+                loop={false}
+                cursor
+                cursorStyle="/"
+                typeSpeed={150}
+                deleteSpeed={150}
+                delaySpeed={1000}
+              />
             </span>
             {" }"}
           </h2>
-          <div className=" space-x-5 pt-8">
-            <Link to={'https://drive.google.com/uc?export=download&id=1Sr4lK-NXdQLL00xpNjdDVBZ6rsXAXNes'}>
-            <button className="btn ">Download CV <FaDownload /></button>
+          <div className="space-x-5 md:pt-8 pt-5">
+            <Link
+              to={
+                "https://drive.google.com/uc?export=download&id=1Sr4lK-NXdQLL00xpNjdDVBZ6rsXAXNes"
+              }
+            >
+              <button className="btn ">
+                Download CV <FaDownload />
+              </button>
             </Link>
-            <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">Contact Me <PiPhoneDisconnectFill /></button>
+            <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">
+              Contact Me <PiPhoneDisconnectFill />
+            </button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2 pt-10 md:pt-0">
           <img src={dp} alt="profile Image" />
         </div>
       </div>
