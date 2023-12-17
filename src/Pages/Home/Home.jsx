@@ -47,18 +47,18 @@ const Home = () => {
             <Banner></Banner>
           </BoxContainer>
         </section>
-        <section id="about" className="bg-neutral-600 pt-14 pb-8">
+        <section id="about" className="bg-neutral-600 p-5 py-10">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               <span className="text-react">About</span> Me
             </h2>
             <div className="divider bg-react h-1 w-28 my-0"></div>
-            <div className="flex py-5">
-              <div className="w-1/2 p-5 pl-0">
+            <div className="md:flex py-5">
+              <div className="md:w-1/2 md:p-5 md:pl-0">
                 <img src={cover1} alt="owner image" />
               </div>
-              <div className="w-1/2 p-5">
-                <p>
+              <div className="md:w-1/2 md:p-5 pt-5">
+                <p className="text-justify">
                   Frontend focused MERN Stack Developer and tech enthusiast
                   seeking a dynamic role to apply problem-solving skills,
                   collaborate effectively, and actively contribute to the
@@ -67,7 +67,7 @@ const Home = () => {
                   applications and committed to continuous skill enhancement in
                   this evolving field.
                 </p>
-                <div className="stats shadow mt-5">
+                <div className="stats flex shadow mt-5">
                   <div className="stat">
                     <div className="stat-figure text-react text-4xl">
                       <SiMinds />
@@ -109,13 +109,13 @@ const Home = () => {
           </BoxContainer>
         </section>
 
-        <section id="skill" className="bg-black pt-14 pb-14">
+        <section id="skill" className="bg-black py-10 p-5">
           <BoxContainer>
             <h2 className="font-medium text-2xl">
               My <span className="text-react">Skills</span>
             </h2>
             <div className="divider bg-react h-1 w-24 my-0"></div>
-            <div className="grid grid-cols-4 justify-around p-10">
+            <div className="grid lg:grid-cols-4 grid-cols-2 gap-y-10 justify-around p-10">
               <div className="flex flex-col items-center gap-5">
                 <div
                   className="radial-progress text-react"
@@ -128,7 +128,7 @@ const Home = () => {
                 >
                   85%
                 </div>
-                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-react">
+                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 md:px-10 px-5 rounded py-2 text-react">
                   ReactJs
                   <FaReact />
                 </div>
@@ -145,7 +145,7 @@ const Home = () => {
                 >
                   80%
                 </div>
-                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-[#f0db4f]">
+                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 md:px-10 px-5 rounded py-2 text-[#f0db4f]">
                   JavaScript
                   <RiJavascriptFill />
                 </div>
@@ -162,7 +162,7 @@ const Home = () => {
                 >
                   70%
                 </div>
-                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-white">
+                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 md:px-10 px-5 rounded py-2 text-white">
                   ExpressJs
                   <SiExpress />
                 </div>
@@ -179,13 +179,13 @@ const Home = () => {
                 >
                   75%
                 </div>
-                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-[#4DB33D]">
+                <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 md:px-10 px-5 rounded py-2 text-[#4DB33D]">
                   MongoDB
                   <BiLogoMongodb />
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-6 gap-6">
+            <div className="grid lg:grid-cols-6 grid-cols-2 gap-6">
               <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-[#38BDF8]">
                 Tailwind
                 <div className="text-xl">
