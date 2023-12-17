@@ -28,7 +28,7 @@ const Banner = () => {
             {" }"}
           </h2>
           <div className=" space-x-5 pt-8">
-            <Link to={'https://drive.google.com/uc?export=download&id=1-YwNrdlpeij7taGQaZ6hnSGeb7cnhjkB'}>
+            <Link to={'https://drive.google.com/uc?export=download&id=1Sr4lK-NXdQLL00xpNjdDVBZ6rsXAXNes'}>
             <button className="btn ">Download CV <FaDownload /></button>
             </Link>
             <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">Contact Me <PiPhoneDisconnectFill /></button>
