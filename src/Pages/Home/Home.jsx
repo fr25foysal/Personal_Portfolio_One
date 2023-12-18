@@ -21,6 +21,7 @@ import lifeflow2 from "../../assets/lifeflow2.png"
 import lifeflow3 from "../../assets/lifeflow3.png"
 import lifeflow4 from "../../assets/lifeflow4.png"
 import lifeflow5 from "../../assets/lifeflow5.png"
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   const handleSubmit = (e)=>{
@@ -53,11 +54,11 @@ const Home = () => {
               <span className="text-react">About</span> Me
             </h2>
             <div className="divider bg-react h-1 w-28 my-0"></div>
-            <div className="md:flex py-5">
-              <div className="md:w-1/2 md:p-5 md:pl-0">
+            <div className="lg:flex py-5">
+              <div className="lg:w-1/2 md:p-5 md:pl-0">
                 <img src={cover1} alt="owner image" />
               </div>
-              <div className="md:w-1/2 md:p-5 pt-5">
+              <div className="lg:w-1/2 md:p-5 pt-5">
                 <p className="text-justify">
                   Frontend focused MERN Stack Developer and tech enthusiast
                   seeking a dynamic role to apply problem-solving skills,
@@ -67,6 +68,7 @@ const Home = () => {
                   applications and committed to continuous skill enhancement in
                   this evolving field.
                 </p>
+                <div className="">
                 <div className="stats flex shadow mt-5">
                   <div className="stat">
                     <div className="stat-figure text-react text-4xl">
@@ -104,6 +106,7 @@ const Home = () => {
                 <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">
                   Contact Me <PiPhoneDisconnectFill />
                 </button>
+                </div>
               </div>
             </div>
           </BoxContainer>
@@ -185,7 +188,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="grid lg:grid-cols-6 grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-6">
               <div className="flex gap-3 text-xl justify-center items-center bg-neutral-500 px-10 rounded py-2 text-[#38BDF8]">
                 Tailwind
                 <div className="text-xl">
@@ -510,11 +513,11 @@ const Home = () => {
               Contact<span className="text-react"> Me</span>
             </h2>
             <div className="divider bg-react h-1 w-32 my-0"></div>
-            <div>
-              <div className="container md:my-24 mt-8  mx-auto">
+           
+              <div className="container md:my-10 mt-8 mx-auto">
                 <div className="flex flex-wrap">
-                  <div className=" w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
-                    <form onSubmit={handleSubmit} className="mb-6 text-white">
+                  <div className="w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12">
+                    <form onSubmit={handleSubmit} className=" text-white">
                       <div className="flex gap-4">
                          <div className="mb-6 w-1/2">
                         <label
@@ -566,7 +569,7 @@ const Home = () => {
                           required
                         />
                       </div>
-                      <div className="mb-6">
+                      <div className="mb-8">
                         <label
                           htmlFor="message"
                           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -668,9 +671,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </BoxContainer>
         </section>
+        <Footer></Footer>
       </div>
     );
 };

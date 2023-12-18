@@ -11,7 +11,7 @@ const Banner = () => {
           <h2 className="md:text-4xl text-3xl font-medium">
             {"// Hi, I'm _Foysal_Rahman"}
           </h2>
-          <h2 className="md:text-3xl text-xl pt-5 text-react">
+          <h2 className="lg:text-3xl text-xl pt-5 text-react">
             {"{ "}
             <span>
               {/* Style will be inherited from the parent element */}
