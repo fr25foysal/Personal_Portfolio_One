@@ -34,7 +34,7 @@ const Banner = () => {
           <div className="space-x-5 md:pt-8 pt-5">
             <Link
               to={
-                "https://drive.google.com/uc?export=download&id=1Sr4lK-NXdQLL00xpNjdDVBZ6rsXAXNes"
+                "https://drive.google.com/uc?export=download&id=11B6fJgof4Hs1ym2c3W2ptd3Deq7EYCGF"
               }
             >
               <button className="btn ">
