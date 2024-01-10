@@ -21,6 +21,12 @@ import lifeflow2 from "../../assets/lifeflow2.png"
 import lifeflow3 from "../../assets/lifeflow3.png"
 import lifeflow4 from "../../assets/lifeflow4.png"
 import lifeflow5 from "../../assets/lifeflow5.png"
+import shareplus1 from "../../assets/shareplus1.png"
+import shareplus2 from "../../assets/shareplus2.png"
+import shareplus3 from "../../assets/shareplus3.png"
+import shareplus4 from "../../assets/shareplus4.png"
+import shareplus5 from "../../assets/shareplus5.png"
+
 import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
@@ -431,7 +437,38 @@ const Home = () => {
                 <img src={lifeflow5} alt="lifeflow" />
 
               </div>
-            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
+            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  SharePlus <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
+            </div>
+              <div className="grid lg:grid-cols-3 gap-8 py-5">
+                <img src={shareplus4} alt="shareplus" />
+                <img src={shareplus1} alt="shareplus" />
+                <img src={shareplus3} alt="shareplus" />
+                <img src={shareplus2} alt="shareplus" />
+                <div className="bg-neutral-600 text-center p-2">
+                  <h2 className="text-3xl font-medium text-react">SharePlus</h2> 
+                  <p>Food & Shurplus Sharing Cummunity Website</p>   
+                  <div className="flex gap-5 justify-between px-2 py-3 text-left">
+                    <ul className="list-disc list-inside">
+                      <li>CRUD Operations</li>
+                      <li>Animation</li>
+                      <li>Request Food</li>
+                    </ul>
+                    <ul className="list-disc">
+                      <li>User Authentication</li>
+                      <li>Search/Sort</li>
+                      <li>Manage Food</li>
+                    </ul>
+                  </div>
+                  <div className="space-x-6">
+                    <a href="https://shareplus-25.web.app" target="blank" className="btn bg-react border-none">Live Link</a>
+                    <a href="https://github.com/fr25foysal/SharePlus-Donation-Community" target="blank" className="btn btn-outline border-white text-white">Github Link</a>
+                    </div>                
+                </div>
+                
+                <img src={shareplus5} alt="shareplus" />
+
+              </div>
+            {/* <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
             </div>
               <div className="grid lg:grid-cols-3 gap-8 py-5">
                 <img src={lifeflow2} alt="lifeflow" />
@@ -461,38 +498,7 @@ const Home = () => {
                 
                 <img src={lifeflow5} alt="lifeflow" />
 
-              </div>
-            <div className="divider divider-info text-react text-2xl font-medium"><p className="flex gap-2 text-2xl text-react"><FaReact /> <SiTailwindcss /> <IoLogoFirebase /></p>  LifeFlow <p className="flex gap-2 text-2xl text-react"><SiExpress /> <BiLogoMongodb /> <SiJsonwebtokens /> </p> 
-            </div>
-              <div className="grid lg:grid-cols-3 gap-8 py-5">
-                <img src={lifeflow2} alt="lifeflow" />
-                <img src={lifeflow3} alt="lifeflow" />
-                <img src={lifeflow1} alt="lifeflow" />
-                <img src={lifeflow4} alt="lifeflow" />
-                <div className="bg-neutral-600 text-center p-2">
-                  <h2 className="text-3xl font-medium text-react">Lifeflow</h2> 
-                  <p>A Blood Donation Cummunity Website</p>   
-                  <div className="flex gap-5 justify-between px-2 py-3 text-left">
-                    <ul className="list-disc list-inside">
-                      <li>Request Donation</li>
-                      <li>Content Manage</li>
-                      <li>Request Donation</li>
-                    </ul>
-                    <ul className="list-disc">
-                      <li>User Authentication</li>
-                      <li>Search/Sort</li>
-                      <li>Role Dashboards</li>
-                    </ul>
-                  </div>
-                  <div className="space-x-6">
-                    <a href="https://lifeflow-25.web.app" target="blank" className="btn bg-react border-none">Live Link</a>
-                    <a href="https://github.com/fr25foysal/LifeFlow-Blood-Donation-Community" target="blank" className="btn btn-outline border-white text-white">Github Link</a>
-                    </div>                
-                </div>
-                
-                <img src={lifeflow5} alt="lifeflow" />
-
-              </div>
+              </div> */}
             </div>
           </BoxContainer>
         </section>
