@@ -28,6 +28,7 @@ import shareplus4 from "../../assets/shareplus4.png"
 import shareplus5 from "../../assets/shareplus5.png"
 
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const handleSubmit = (e)=>{
@@ -109,9 +110,9 @@ const Home = () => {
                     <div className="stat-desc">Delicious</div>
                   </div>
                 </div>
-                <button className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">
+                <a href="#contact" className="btn btn-outline mt-5 hover:bg-react hover:text-black text-white">
                   Contact Me <PiPhoneDisconnectFill />
-                </button>
+                </a>
                 </div>
               </div>
             </div>
